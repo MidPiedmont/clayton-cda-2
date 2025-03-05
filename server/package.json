@@ -1,5 +1,5 @@
 {
-  "name": "CDA Server",
+  "name": "clayton-cda-2-server",
   "version": "25.03.1",
   "description": "An API server made using node.js and Express and a mariadb plugin for CDA to be able to query address data",
   "main": "index.js",
