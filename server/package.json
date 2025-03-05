@@ -1,0 +1,16 @@
+{
+  "name": "CDA Server",
+  "version": "25.03.1",
+  "description": "An API server made using node.js and Express and a mariadb plugin for CDA to be able to query address data",
+  "main": "index.js",
+  "scripts":{
+    "start": "node ./index.js"
+  },
+  "keywords": [],
+  "author": "Robert Zimmerman",
+  "license": "The Unlicense",
+  "dependencies": {
+    "express": "4.21.2",
+    "mariadb": "3.4.0"
+  }
+}
