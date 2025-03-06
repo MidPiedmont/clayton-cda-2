@@ -1,6 +1,6 @@
 # node_modules
-cda/client/node_modules
-cda/server/node_modules
+*/node_modules
+*/.vscode
 
 # DB Credentials
 cda/server/dbConfig.js
