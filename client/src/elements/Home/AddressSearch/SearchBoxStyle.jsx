@@ -1,5 +1,5 @@
-
-  /* #autocomplete-input {
+export const styles = `
+    /* #autocomplete-input {
     border: 1px solid #dddddd;
     background-color: #005a1c;
     width: 100%;
@@ -60,6 +60,7 @@
     background: red;
     border-radius: '5px';
   }
+  `;
 
 
 

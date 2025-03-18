@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Turnstone from 'turnstone'
 import { AddressSearch } from './AddressSearch'
-import styles from './SearchBox.css'
+import { styles } from './SearchBoxStyle'
 import { StyledGridContainer, StyledGridItem } from '@nextui-org/react'
 
 // const styles = {

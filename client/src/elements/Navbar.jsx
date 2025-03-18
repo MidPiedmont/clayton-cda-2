@@ -1,5 +1,5 @@
 import { css, Navbar, Link, Text } from '@nextui-org/react'
-import { ClaytonLogo } from './ClaytonLogo.js'
+import { ClaytonLogo } from './ClaytonLogo'
 
 
 export function HomeNavbar() {
