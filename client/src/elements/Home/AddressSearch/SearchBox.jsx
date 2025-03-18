@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Turnstone from 'turnstone'
 import { AddressSearch } from './AddressSearch'
-import { styles } from './SearchBoxStyle'
+import './SearchBoxStyle.css'
 import { StyledGridContainer, StyledGridItem } from '@nextui-org/react'
 
 // const styles = {
@@ -44,7 +44,6 @@ export function SearchBox() {
         matchText={true} 
         listbox={listbox}  
         typeahead={false} 
-        styles={styles} 
         onSelect={onSelect} />
       </StyledGridItem>
       <StyledGridItem justify="center">

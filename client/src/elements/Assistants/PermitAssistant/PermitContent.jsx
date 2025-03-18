@@ -1,7 +1,7 @@
 import React from 'react'
 import { PermitCards } from './PermitCards'
 import { PermitPages } from './PermitPages'
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router';
 import { Container, Spacer, Grid, Card, Row, Text, Button, Col, Divider } from "@nextui-org/react";
 
 

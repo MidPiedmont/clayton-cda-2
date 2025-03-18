@@ -1,7 +1,7 @@
 import React from 'react'
 import { ZoningCards } from './ZoningCards'
 import { ZoningPages } from './ZoningPages'
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router';
 import { Container, Spacer, Grid, Card, Row, Text, Button, Col, Divider } from "@nextui-org/react";
 
 

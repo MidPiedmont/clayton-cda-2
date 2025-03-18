@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { Container, Spacer, Grid, Card, Row, Text, Button, Col, Divider } from "@nextui-org/react";
 
 

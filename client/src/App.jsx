@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router";
 import { Home } from "./pages/Home";
 import { Assistant } from "./pages/Assistant"
 import { PermitAssistant } from "./pages/PermitAssistant";

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { Spacer, Row, Card, Button, Text, Grid } from "@nextui-org/react";
 
 export function UnincorpAddr({zone, addr}) {

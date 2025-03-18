@@ -1,9 +1,10 @@
 # node_modules
 */node_modules
 */.vscode
+cda/package-lock.json
 
 # DB Credentials
-cda/server/dbConfig.js
+server/dbConfig.js
 
 # Logs
 logs
