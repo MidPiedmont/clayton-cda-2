@@ -1,0 +1,23 @@
+In this current iteration, I've removed CRA and replaced with Vit,
+    and I've also gotten rid of a shitload of deps, breaking the whole damn project
+
+I'm thinking that the move is to: 
+1. trash this version, 
+2. copy over a fresh copy of the old, 
+3a*. start coding the whole app from scratch
+3b*. Strip unnecessary deps, update deps that can be updated, and start replacing nextui compenents in-place with shadcn components
+*No preference, maybe flip a coin?
+
+[3a] Coding it Again
+    [ ] Create Vite React app (ts)
+    [ ] Add React Router
+    [ ] Install Shadcn CLI
+    [ ] Start re-coding from scratch
+
+[3b] Remaking in Place
+    [ ] Strip unnecessary deps
+    [ ] Remove react-scripts and other unnecessary deps
+    [ ] Update deps that can be updated
+    [ ] Install Shadcn CLI
+    [ ] Start Replacing nextui components one by one, with Shadcn components
+    [ ] Remove nextui as a dep
