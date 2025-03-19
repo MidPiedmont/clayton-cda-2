@@ -1,0 +1,78 @@
+
+  /* #autocomplete-input {
+    border: 1px solid #dddddd;
+    background-color: #005a1c;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    color: #2774ae;
+    border-radius: 25px
+  } */
+  /* @media (max-width: 900px) {
+    #autocomplete {
+      width: 100%;
+      height: calc(30px + 1vh);
+      font-size: calc(24px + 1vh);
+      margin-top: 15px;
+      align-items: center;
+      color: #ffffff;
+      border-radius: 15px
+    }
+  } */
+  
+  #autocomplete {
+    width: 100%;
+    height: 80%;
+    font-size: calc(12px + 1vh);
+    font-family: 'Open Sans';
+    margin-top: 15px;
+    align-items: center;
+    color: #101820;
+    padding: 4px 8px;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color:#303030;
+    background-color: #dde5ed;
+  }
+
+  #autocomplete-listbox {
+    width: 100%;
+    text-align: left;
+    font-family: 'Open Sans';
+    padding: 8px;
+    color: #101820;
+    transition: background-color 3s;
+    align-items: center;
+    border-radius: 15px ;
+    background-color: #b5bcc4;
+    position: relative;
+  }
+
+  #autocomplete-listbox :hover{
+    background-color: #dde5ed;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 1px
+  }
+
+  #autocomplete-hightlighteditem{
+    background: red;
+    border-radius: '5px';
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
