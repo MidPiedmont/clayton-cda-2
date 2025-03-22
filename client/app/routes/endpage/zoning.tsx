@@ -7,10 +7,12 @@ export default function ZoningEndPage() {
   }
 
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, useLoaderData, Form, redirect, createBrowserRouter } from 'react-router';
+import { useNavigate, useLoaderData } from 'react-router';
 import { Card } from '~/components/ui/card';
+import { Checkbox } from '~/components/ui/checkbox';
+import { CheckboxGroup } from '~/components/ui/checkboxgroup';
 import { ContinueButton } from '~/components/endpage/ContinueButton';
-import { ZoningCards, type ZoningCard } from '~/components/assistant/ZoningCards';
+import { ZoningCards, type ZoningCard } from '~/data/zoning/zoningcards';
 import { zoningPrereqs, ZoningPrerequisite } from './zoningPrereqs';
 import { ZoningPrereqTips } from './ZoningPrereqTips';
 
@@ -83,10 +85,8 @@ export const ZEndPageContent: React.FC = () => {
           </Text>
           <Divider />
           <Spacer y={0.5} />
-          <Checkbox.Group
+          <CheckboxGroup
             label="Requirements Checklist"
-            color="primary"
-            size="sm"
             value={groupSelected}
             onChange={setGroupSelected}
           >
@@ -95,7 +95,7 @@ export const ZEndPageContent: React.FC = () => {
                 {zoningPrereqs[reqs].name} <ZoningPrereqTips tip={zoningPrereqs[reqs].tip} />
               </Checkbox>
             ))}
-          </Checkbox.Group>
+          </CheckboxGroup>
         </Card>
         <Spacer y={1} />
         <Card isHoverable variant={cardVariant()} borderWeight="bold" css={{ p: '10px' }}>

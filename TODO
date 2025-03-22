@@ -20,18 +20,14 @@ OR
       ''`---.....______________.....---''
 
 [3a] Coding it Again
-    [ ] Create Vite React app (ts)
-    [ ] Add React Router
-    [ ] Install Shadcn CLI
-    [ ] Start re-coding from scratch
-
-*[3b] Remaking in Place
-    [X] Test as-is
-    [ ] Strip unnecessary deps
-    [ ] Remove react-scripts and other unnecessary deps
-    [ ] Test
-    [ ] Update deps that can be updated
-        [ ] Test after each update
-    [ ] Install Shadcn CLI
-    [ ] Start Replacing nextui components one by one, with Shadcn components
-    [ ] Remove nextui as a dep
+    [X] Create React Router App
+    [X] Setup up routing to match old project
+    [ ] Starting at the End Pages, refactor code and replace components
+        [ ] End Pages
+            [ ] Zoning
+            [ ] Permit
+            [ ] License
+        [ ] Assistant
+        [ ] Home
+    [ ] Test thoroughly
+    [ ] Style to match ClayCo branding
