@@ -1,23 +1,15 @@
-export default function ZoningEndPage() {
-    return(
-      <div className="flex flex-col items-center justify-center min-h-svh">
-        Zoning EndPage
-      </div>
-    )
-  }
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useLoaderData } from 'react-router';
 import { Card } from '~/components/ui/card';
 import { Checkbox } from '~/components/ui/checkbox';
-import { CheckboxGroup } from '~/components/ui/checkboxgroup';
+import { CheckboxGroup } from '~/components/ui/checkbox-group';
 import { ContinueButton } from '~/components/endpage/ContinueButton';
-import { ZoningCards, type ZoningCard } from '~/data/zoning/zoningcards';
-import { zoningPrereqs, ZoningPrerequisite } from './zoningPrereqs';
+import { ZoningCards, type ZoningCard } from '~/data/zoning/zoning-cards';
+import { zoningPrereqs, type ZoningPrerequisite } from './zoningPrereqs';
 import { ZoningPrereqTips } from './ZoningPrereqTips';
 
 interface RouteParams {
-  id: string;
+  id: number;
 }
 
 interface ZEndPageLoaderData {
@@ -30,20 +22,20 @@ export const zEndPageLoader = ({ params }: { params: RouteParams }): ZEndPageLoa
   return { card };
 };
 
-export const ZEndPageContent: React.FC = () => {
+export const zEndPage: React.FC = () => {
   const { card } = useLoaderData() as ZEndPageLoaderData;
   const navigate = useNavigate();
   const [selected, setSelected] = useState(false);
-  const [groupSelected, setGroupSelected] = useState<string[]>([]);
+  const [groupSelected, setGroupSelected] = useState<number[]>([]);
   const cardReqs: number[] = card.requirements;
   const cardCategoryText: string = card.categoryText;
 
-  function arraysEqual(arr1: string[], arr2: number[]): boolean {
+  function arraysEqual(arr1: number[], arr2: number[]): boolean {
     if (arr1.length !== arr2.length) {
       return false;
     }
     for (let i = arr1.length; i--;) {
-      if (arr1[i] !== String(arr2[i])) {
+      if (arr1[i] !== arr2[i]) {
         return false;
       }
     }
@@ -125,3 +117,5 @@ export const ZEndPageContent: React.FC = () => {
     </Grid.Container>
   );
 };
+
+export default zEndPage

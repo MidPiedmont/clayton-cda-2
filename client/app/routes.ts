@@ -8,7 +8,7 @@ import {
 export default [
     index("routes/home.tsx"),
 
-    // Example to hold onto to figure out param routing
+    // Example route to hold onto to figure out param routing
     route("post/:postID", "routes/post.tsx"),
 
     // Assistant Routes
