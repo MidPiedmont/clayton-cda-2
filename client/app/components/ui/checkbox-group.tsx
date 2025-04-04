@@ -3,10 +3,13 @@ import { Checkbox as ShadcnCheckbox } from '~/components/ui/checkbox';
 
 interface CheckboxGroupProps {
   label?: string;
-  value: string[];
-  onChange: (newValue: string[]) => void;
+  value: number[];
+  onChange: (newValue: number[]) => void;
   children: ReactNode;
   className?: string;
+  allValues: number[]; // Add all possible values
+  masterChecked: boolean;
+  setMasterChecked: (checked: boolean) => void;
 }
 
 export const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
@@ -15,7 +18,11 @@ export const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
   onChange,
   children,
   className,
+  allValues,
+  masterChecked,
+  setMasterChecked,
 }) => {
+
   return (
     <div className={className}>
       {label && (
@@ -26,10 +33,10 @@ export const CheckboxGroup: React.FC<CheckboxGroupProps> = ({
       <div className="space-y-2">
         {React.Children.map(children, (child) => {
           if (React.isValidElement(child) && child.type === ShadcnCheckbox) {
-            const checkboxProps = child.props as { value: string; children?: ReactNode; className?: string };
+            const checkboxProps = child.props as { value: number; children?: ReactNode; className?: string };
 
             return React.cloneElement(child, {
-              ...(child.props as any), // Type assertion here.
+              ...(child.props as any),
               checked: value.includes(checkboxProps.value),
               onCheckedChange: (checked: boolean) => {
                 if (checked) {

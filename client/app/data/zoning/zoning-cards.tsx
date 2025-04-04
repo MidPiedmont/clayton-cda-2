@@ -1,4 +1,4 @@
-export interface ZoningCard {
+export interface zoningCard {
     questionText: string;
     categoryText: string;
     id: number;
@@ -9,7 +9,7 @@ export interface ZoningCard {
     requirements: number[];
   }
   
-  export const ZoningCards: ZoningCard[] = [
+  export const zoningCards: zoningCard[] = [
     {questionText: 'Pre-Application Meeting',
     categoryText: 'Request',
     id: 0, 

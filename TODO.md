@@ -24,7 +24,7 @@ OR
     [X] Setup up routing to match old project
     [ ] Starting at the End Pages, refactor code and replace components
         [ ] End Pages
-            [ ] Zoning
+            [X...?] Zoning
             [ ] Permit
             [ ] License
         [ ] Assistant
